@@ -4,7 +4,7 @@ Floor 34 - The evil IT Department from the "Wool" series of spooky apocalypse bo
 
 Overview:
 ---------
-floor34 is built on Node.js [1] with the expressjs [2] and jade [3] modules. An HTTP service is setup
+floor34 is built on Node.js [1] with the expressjs [2] and jade [3] modules (which you'll need to install if you're cloning this). An HTTP service is setup
 listening on 8080/tcp, with a very simple layout. In the WOOL series the IT Department is pretty sketchy,
 and has a secret access hatch to a "35th" floor of the silo, which our challenger will need to gain access to.
 
