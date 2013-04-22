@@ -20,7 +20,9 @@ disallowed crawler access to /35.
 From there, they will most likely be hit with an access denied message when browsing to /35. Access to the
 secret hatch should only be coming from the local machine. The vulnerability here is similar to the bug
 that allowed access to the StackOverflow administration functions, namely, an X-Forwarded-For
-header set to 127.0.0.1 [4]. The bug exists because we've turned on the expressjs feature 'trust proxy',
+header set to 127.0.0.1 [4]. 
+
+The bug exists because we've turned on the expressjs feature 'trust proxy',
 which is supposed to be enabled when Node is being run behind a reverse proxy (Varnish, Nginx, etc.). Once
 enabled, the X-Forwarded-For's IP will populate the request.ip/request.ips values [5]. Since we're not
 behind a reverse-proxy, that means whatever X-Forwarded-For header the challenger sends (manually inserted,
