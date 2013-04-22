@@ -1,6 +1,7 @@
 Floor 34 - The evil IT Department from the "Wool" series of spooky apocalypse books
 ===================================================================================
 
+
 Overview:
 ---------
 floor34 is built on Node.js [1] with the expressjs [2] and jade [3] modules. An HTTP service is setup
@@ -28,7 +29,7 @@ will gain access to the page.
 
 One last hurdle remains, guessing the "entrance code" for the access hatch. There's some obfuscated javascript
 in the public/x.js file which is loaded by the page at /35. Running it through something like js-beautify [6]
-should reveal all they need to know. 
+should reveal all they need to know.
 
 
 Operational Considerations / Notes:
@@ -42,7 +43,10 @@ floor34 was developed and hosted on an Ubuntu 12.04 VM. The code was stored in /
 	/home/bernard/floor34/views/: jade templates for content
 	/home/bernard/floor34/access.log: log of all requests
 
-floor34 is configured as an upstart service (/etc/init/floor34.conf) to startup at boot. It can be controlled (stop/start/restart/status) via `sudo (status|stop|start) floor34`. It is setuid/setgid to the user 'bernard'.
+floor34 is configured as an upstart service (/etc/init/floor34.conf) to startup at boot. It can be controlled (stop/start/restart/status) via:
+`sudo (status|stop|start) floor34`
+
+It is setuid/setgid to the user 'bernard'.
 
 eth0 is configured to be bridged and to obtain an IP address through DHCP.
 
@@ -53,9 +57,9 @@ No SSH service is installed or configured.
 
 References:
 -----------
-[1] - http://nodejs.org
-[2] - http://expressjs.com/
-[3] - http://jade-lang.com/
-[4] - http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html
-[5] - http://expressjs.com/guide.html#proxies
-[6] - http://jsbeautifier.org/
+*[1] - http://nodejs.org
+*[2] - http://expressjs.com/
+*[3] - http://jade-lang.com/
+*[4] - http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html
+*[5] - http://expressjs.com/guide.html#proxies
+*[6] - http://jsbeautifier.org/
