@@ -57,9 +57,9 @@ No SSH service is installed or configured.
 
 References:
 -----------
-*[1] - http://nodejs.org
-*[2] - http://expressjs.com/
-*[3] - http://jade-lang.com/
-*[4] - http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html
-*[5] - http://expressjs.com/guide.html#proxies
-*[6] - http://jsbeautifier.org/
+* [1] - http://nodejs.org
+* [2] - http://expressjs.com/
+* [3] - http://jade-lang.com/
+* [4] - http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html
+* [5] - http://expressjs.com/guide.html#proxies
+* [6] - http://jsbeautifier.org/
