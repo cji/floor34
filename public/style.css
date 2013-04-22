@@ -1,0 +1,10 @@
+body {
+  padding: 50px 80px;
+  font: 14px "Helvetica Nueue", "Lucida Grande", Arial, sans-serif;
+  background-color: #415E9E;
+  color: #E6E337;
+}
+a:link {color:#E6E337;}
+a:visited {color:#00FF00;}
+a:hover {color:#E6E337;}
+a:active {color:#E6E337;} 

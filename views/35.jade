@@ -1,0 +1,15 @@
+extends layout
+
+block title
+    title Floor 35 Access
+block scripts
+    script(src='/x.js')
+block content
+    h1 Floor 35 Access
+    p Access to the 35th floor hatch is restricted to IT Department management only.
+    p Discussion of the existence of the 35th floor is expressly prohibited and will result in a cleaning assignment.
+    form#l(name='l', onsubmit='a()')
+      | Entrance Code: 
+      input#b(type='password', size='30', name='b')
+      input(type='submit', value='Enter')
+    p
